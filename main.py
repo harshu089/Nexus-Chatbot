@@ -11,7 +11,7 @@ import io
 from groq import Groq
 
 recognizer = sr.Recognizer()
-newsapi = "ecf681f277b141ba975722db669321a5"
+newsapi = ""
 
 pygame.mixer.init()
 
@@ -37,7 +37,7 @@ def speak(text):
 
 
 def aiProcess(command):
-    client = Groq(api_key="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")
+    client = Groq(api_key="")
 
     chat_completion = client.chat.completions.create(
     messages=[
